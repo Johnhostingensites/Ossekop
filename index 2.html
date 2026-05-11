@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speeltuinvereniging De Ossenkop Bredevoort</title>
+  <meta name="description" content="Bij De Ossenkop kun je gezellig komen spelen met andere kinderen. Activiteiten delen we via de klasse-apps van het Bastion en onze Facebook- en Instagrampagina." />
+  <meta property="og:title" content="Speeltuinvereniging De Ossenkop Bredevoort" />
+  <meta property="og:description" content="Bij De Ossenkop kun je gezellig komen spelen met andere kinderen. Activiteiten delen we via de klasse-apps van het Bastion en onze Facebook- en Instagrampagina." />
+  <meta property="og:image" content="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673f521201272a2281ba24c_299970274_5771764692843393_6271583778879598633_n.jpeg" />
+  <link rel="icon" href="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66bda4eaf6ff94ad4a196c1d_Favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#173f84;
+      --yellow:#f5d637;
+      --cream:#fff6d8;
+      --ivory:#fff8e6;
+      --orange:#ed7f26;
+      --text:#173f84;
+      --white:#fff;
+      --shadow:0 18px 40px rgba(23,63,132,.16);
+      --radius:32px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Fredoka",system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--text);font-size:18px;line-height:1.45;overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .max-width{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .btn,.w-button{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;border:0;border-radius:999px;padding:15px 25px;font-weight:700;text-decoration:none;line-height:1;background:var(--yellow);color:var(--blue);box-shadow:0 7px 0 rgba(23,63,132,.18);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;font-size:18px}
+    .btn:hover,.w-button:hover{transform:translateY(-2px) rotate(-1deg);box-shadow:0 10px 0 rgba(23,63,132,.2)}
+    .btn-blue{background:var(--blue);color:white;box-shadow:0 7px 0 rgba(0,0,0,.14)}
+
+    /* Menu / hero top */
+    .hoofdmenu{position:relative;padding:28px 0 84px;background:var(--cream);overflow:hidden}
+    .hoofdmenu:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-65px;height:150px;background:white;border-radius:50% 50% 0 0/100% 100% 0 0;z-index:0}
+    .topbar{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .logo{width:min(430px,48vw)}
+    .menu-panel{background:#fff;border-radius:999px;padding:9px;display:flex;gap:8px;align-items:center;box-shadow:var(--shadow)}
+    .menu-link{padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700;color:var(--blue);font-size:17px}
+    .menu-link:hover{background:var(--cream)}
+    .facebook-top{white-space:nowrap}.instagram-top{background:var(--blue);color:white}.social-follow{margin-left:10px}.menu-panel,.btn,.photo,.hero-img,.content-card,.notice-card,.contact-card{will-change:transform}.content-card:hover,.notice-card:hover,.contact-card:hover{transform:translateY(-3px);transition:transform .18s ease}.socials a{transition:transform .18s ease}.socials a:hover{transform:rotate(-6deg) scale(1.08)}
+
+    /* Hero */
+    .head{position:relative;background:#fff;padding:50px 0 80px}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center}
+    h1{font-size:clamp(48px,7vw,88px);line-height:.9;margin:0 0 24px;font-weight:700;letter-spacing:-.03em;color:var(--blue)}
+    h2{font-size:clamp(34px,5vw,58px);line-height:.95;margin:0 0 20px;font-weight:700;letter-spacing:-.025em;color:var(--blue)}
+    h3.kicker,.heading-2{font-size:24px;color:var(--orange);margin:0 0 10px;font-weight:700;text-transform:none}
+    .event-box{background:var(--cream);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+    .event-box h3{font-size:28px;margin:0 0 10px;color:var(--blue)}
+    .event-box p{font-size:22px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+    .hero-img{border-radius:48px;transform:rotate(2deg);box-shadow:var(--shadow);border:12px solid var(--yellow);width:100%;object-fit:cover}
+
+    /* icons strip */
+    .iconen-set{background:var(--blue);color:white;padding:22px 0;overflow:hidden}
+    .icon-track{display:flex;align-items:center;gap:26px;white-space:nowrap;animation:marquee 28s linear infinite;width:max-content}
+    .icon-track span{font-size:28px;font-weight:700}
+    .icon-track img{width:38px;height:38px;object-fit:contain;filter:drop-shadow(0 3px 0 rgba(0,0,0,.12))}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* sections */
+    section{position:relative}
+    .info-section{background:#fff;padding:80px 0}
+    .intro{text-align:center;max-width:850px;margin:0 auto 42px}
+    .intro p{margin:0 auto;color:var(--blue);font-size:20px}.link{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+    .notice-card{background:var(--cream);border-radius:44px;padding:38px;box-shadow:var(--shadow);text-align:center;max-width:900px;margin:0 auto}
+    .notice-card p{font-size:22px;margin:0 0 22px}
+    .bestuur,.lidmaatschap{padding:88px 0}.bestuur{background:var(--cream)}.lidmaatschap{background:#fff}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.content-card{background:white;border-radius:44px;padding:34px;box-shadow:var(--shadow)}.lidmaatschap .content-card{background:var(--cream)}.text-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}.blue-text{color:var(--blue);font-size:18px}.photo{border-radius:44px;box-shadow:var(--shadow);border:10px solid var(--yellow);width:100%;object-fit:cover}.photo.blue{border-color:var(--blue)}
+    .contact{background:var(--cream);padding:80px 0}.contact-card{text-align:center;background:white;border-radius:52px;padding:48px;box-shadow:var(--shadow)}.contact-card .photo{margin:34px auto 0;max-height:520px;object-fit:cover}
+    .footer{background:var(--blue);color:white;padding:48px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-logo{width:250px;filter:drop-shadow(0 8px 0 rgba(0,0,0,.08))}.footer p{margin:0}.socials{display:flex;align-items:center;gap:16px}.socials img{width:46px;height:46px;object-fit:contain}
+
+    @media (max-width:900px){.topbar,.hero-grid,.two-col,.event-card,.footer-inner{grid-template-columns:1fr;display:grid}.topbar{justify-items:center}.menu-panel{flex-wrap:wrap;border-radius:28px;justify-content:center}.logo{width:min(390px,88vw)}.agenda-top{width:100%}.hero-grid{gap:34px}.event-card>img{min-height:280px}.text-columns{grid-template-columns:1fr}.footer-inner{text-align:center;justify-items:center}.hero-img{transform:none}.event-content h4{font-size:36px}}
+    @media (max-width:520px){body{font-size:16px}.max-width{width:min(100% - 24px,1120px)}.hoofdmenu{padding-top:18px}.head,.info-section,.bestuur,.lidmaatschap,.contact{padding:54px 0}.event-box,.event-content,.content-card,.contact-card,.modal-card{padding:24px;border-radius:30px}.btn,.w-button{width:100%;padding:14px 18px}.event-box p{font-size:18px}.icon-track span{font-size:22px}.age-label{position:static;display:inline-block;margin:18px 0 0}}
+
+    @media (max-width:900px){
+      .topbar{gap:16px}.menu-panel{width:100%;max-width:520px}.facebook-top{width:auto}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero-actions .btn-blue{grid-column:1/-1}.social-follow{margin-left:0;margin-top:10px}.two-col{gap:30px}.lidmaatschap .two-col img{order:2}.lidmaatschap .two-col .content-card{order:1}
+    }
+    @media (max-width:640px){
+      .hero-actions{grid-template-columns:1fr}.menu-link{font-size:16px;padding:10px 13px}.topbar>.btn{width:100%;max-width:360px}.text-columns{gap:8px}.footer-logo{width:220px}.socials{justify-content:center;flex-wrap:wrap}.notice-card .btn{margin-top:8px}
+    }
+    @media (prefers-reduced-motion: reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <header class="hoofdmenu">
+    <div class="max-width topbar">
+      <img class="logo" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6656f93ec9e41bf0022dcee0_De%20Ossenkop.png" alt="De Ossenkop">
+      <nav class="menu-panel" aria-label="Hoofdmenu">
+        <a class="menu-link" href="#bestuur">Bestuur</a>
+        <a class="menu-link" href="#lidmaatschap">Lidmaatschap</a>
+        <a class="menu-link" href="#contact">Contact</a>
+      </nav>
+      <a class="btn facebook-top" href="https://www.facebook.com/SpeeltuinverenigingDeOssenkop" target="_blank" rel="noopener noreferrer">Bekijk Facebook</a><a class="btn facebook-top instagram-top" href="https://www.instagram.com/deossenkop?igsh=MWpycGFndnhjZXN3ZQ==" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="head">
+      <div class="max-width hero-grid">
+        <div>
+          <h1>Kom spelen bij de Ossenkop!</h1>
+          <div class="event-box">
+            <h3>Activiteiten en speelmomenten</h3>
+            <p>Onze activiteiten worden gedeeld in de klasse-apps van het Bastion en op onze Facebook- en Instagrampagina.</p>
+            <p>Heb je een vraag, een leuk idee of wil je helpen als begeleiding? Stuur ons gerust een mailtje.</p>
+            <div class="hero-actions">
+              <a class="btn" href="https://www.facebook.com/SpeeltuinverenigingDeOssenkop" target="_blank" rel="noopener noreferrer">Naar Facebook ></a>
+              <a class="btn" href="https://www.instagram.com/deossenkop?igsh=MWpycGFndnhjZXN3ZQ==" target="_blank" rel="noopener noreferrer">Naar Instagram ></a>
+              <a class="btn btn-blue" href="mailto:info@deossenkop.nl">Stuur een mail ></a>
+            </div>
+          </div>
+        </div>
+        <img class="hero-img" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/665583cba32de8a398642296_Rectangle%206312.png" alt="Kinderen spelen bij De Ossenkop">
+      </div>
+    </section>
+
+    <section class="iconen-set" aria-label="Voordelen">
+      <div class="icon-track">
+        <span>Leuke speeltoestellen</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Met water spelen</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Leuke activiteiten</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Genoeg ruimte</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Ook binnen genoeg te doen</span>
+        <span>Leuke speeltoestellen</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Met water spelen</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Leuke activiteiten</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Genoeg ruimte</span><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/66571cb6a0d37b73d098d7b0_De%20Ossenkop%20kop%5B.png" alt=""><span>Ook binnen genoeg te doen</span>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="max-width">
+        <div class="notice-card">
+          <h3 class="heading-2">Activiteiten</h3>
+          <h2>Zo blijf je op de hoogte</h2>
+          <p>Nieuwe activiteiten en speelmomenten delen we via de klasse-apps van het Bastion en op onze Facebook- en Instagrampagina.</p>
+          <a class="btn" href="https://www.facebook.com/SpeeltuinverenigingDeOssenkop" target="_blank" rel="noopener noreferrer">Volg op Facebook ></a>
+          <a class="btn btn-blue social-follow" href="https://www.instagram.com/deossenkop?igsh=MWpycGFndnhjZXN3ZQ==" target="_blank" rel="noopener noreferrer">Volg op Instagram ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="bestuur" class="bestuur"><div class="max-width two-col"><div class="content-card"><h3 class="heading-2">Bestuur</h3><h2>Bestuur speeltuinvereniging De Ossenkop</h2><div class="text-columns"><p class="blue-text"><strong>Voorzitter:<br></strong>Elisah Veenhuis<br>Roelvinkstraat 29<br>7126 BR Bredevoort<br><br><strong>Penningmeester:</strong><br>Desiree Geurink<br>Misterstraat 39a<br>7126 CB Bredevoort</p><p class="blue-text"><strong>Algemene bestuursleden:<br></strong>Anne den Broeder<br>Lisa Hijink<br>Carla Combee<br>Linda Prinsen<br>Auke Krabshuis<br><br>Voor vragen omtrent het huren van de Ossenkop neem contact op met:<br>Lisa Hijink -> 06-13105508</p></div><a href="mailto:info@deossenkop.nl" class="btn">leuk idee? Mail ons! ></a></div><img class="photo" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673eeac72c67f19a138b1a8_416090326_Bestuur_1650163545469093191_n.jpeg" alt="Bestuur De Ossenkop"></div></section>
+
+    <section id="lidmaatschap" class="lidmaatschap"><div class="max-width two-col"><img class="photo blue" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673f1ed23a6ed74c1078487_369451196_688757326624529_4468464841385542013_n.jpeg" alt="Activiteit bij De Ossenkop"><div class="content-card"><h3 class="heading-2">lid worden</h3><h2>Lidmaatschap</h2><p class="blue-text">Ben jij 4 jaar of ouder, maar niet ouder dan 12 jaar? Dan kun je samen met je gezin lid worden van de speeltuin. Als lid kun je gratis komen spelen tijdens de openingstijden van de speeltuin. Je kunt veelal gratis of tegen lage kosten deelnemen aan de door de speeltuin georganiseerde activiteiten.</p><p class="blue-text"><strong>Kosten</strong><br>Het lidmaatschap geldt voor het hele gezin. De kosten voor het lidmaatschap zijn € 36,- per gezin per jaar.</p><p class="blue-text"><strong>Lid worden</strong><br>Wil je lid worden van de speeltuin download dan het inschrijfformulier (<a class="link" href="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/686bc33568f094da70079979_Aanmeldingsformulier%20de%20Ossenkop.pdf">Aanmeldingsformulier Speeltuin</a>) of stuur een mailtje met je naam en adres naar <a class="link" href="mailto:info@deossenkop.nl">info@deossenkop.nl</a>.</p><p class="blue-text"><strong>Opzeggen</strong><br>Het lidmaatschap loopt van 1 januari t/m 31 december. Opzeggen van een jaarabonnement kan tot 30 november. Dit kan per e-mail naar <a class="link" href="mailto:info@deossenkop.nl">info@deossenkop.nl</a>.</p></div></div></section>
+
+    <section id="contact" class="contact"><div class="max-width"><div class="contact-card"><h3 class="heading-2">Contact</h3><h2>Heb je een vraag of idee?</h2><p class="blue-text">We horen graag van je!<br><br>Het makkelijkste werkt het om een mail te sturen.<br><br><strong>Algemene zaken:</strong><br><a class="link" href="mailto:info@deossenkop.nl">info@deossenkop.nl</a><br>Schoolstraat 2a,<br>7126 AL Bredevoort</p><a href="mailto:info@deossenkop.nl" class="btn">Stuur een mail ></a><img class="photo" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673f521201272a2281ba24c_299970274_5771764692843393_6271583778879598633_n.jpeg" alt="De Ossenkop"></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="max-width footer-inner"><img class="footer-logo" src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6656f93ec9e41bf0022dcee0_De%20Ossenkop.png" alt="De Ossenkop"><p>© <span id="year"></span>, Speeltuinvereniging De Ossenkop, wij verzamelen geen cookies.</p><div class="socials"><p>Volg ons</p><a href="https://www.facebook.com/SpeeltuinverenigingDeOssenkop" target="_blank" rel="noopener noreferrer"><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673fbea8321bbbe5c007ae8_facebookk.png" alt="Facebook"></a><a href="https://www.instagram.com/deossenkop?igsh=MWpycGFndnhjZXN3ZQ==" target="_blank" rel="noopener noreferrer"><img src="https://cdn.prod.website-files.com/6655823f30a3eece1429fd43/6673fbe968c767a92e40158c_Instagrammm.png" alt="Instagram"></a></div></div></footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
